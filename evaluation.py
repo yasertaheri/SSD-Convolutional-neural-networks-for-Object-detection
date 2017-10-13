@@ -304,7 +304,6 @@ def bboxes_decode(SSD_Loc, SSD_Pred, Default_Boxes):
 #            
         scores, idxes = tf.nn.top_k(d_scores[c], k=400, sorted=False)
 #
-#        # Trick to be able to use tf.gather: map for each element in the first dim.
 #
         def fn_gather(bboxes, idxes):
             bb = tf.gather(bboxes, idxes)
@@ -336,9 +335,6 @@ def bboxes_decode(SSD_Loc, SSD_Pred, Default_Boxes):
 
     for c in dd_scores.keys(): 
 #        
-#        # Pad results.
-
-
 
         r = tf.map_fn(lambda x: bboxes_nms(x[0], x[1], 0.1, 200) ,
                       (dd_scores[c], dd_bboxes[c]),
