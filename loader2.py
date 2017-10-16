@@ -17,7 +17,7 @@ prior_scaling=[0.1, 0.1, 0.2, 0.2]
 
 N_Default_Boxes = 5
 
-N_Classes = 2         # 2 signs + 1 background class
+N_Classes = 2         #  with background class
 
 N_Channels = 3        # grayscale->1
 
