@@ -2,7 +2,6 @@
 """
 Created on Thu Jun  1 21:43:30 2017
 
-@author: y_moh
 """
 import tensorflow as tf
 import numpy as np
@@ -26,7 +25,7 @@ output_size = [[38,38],[19,19],[10,10],[5,5],[3,3]]
 
 N_Default_Boxes = 5
 
-N_Classes = 2         # 2 signs + 1 background class
+N_Classes = 2         # with background class
 
 N_Channels = 3        # grayscale->1
 
