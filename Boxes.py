@@ -13,15 +13,14 @@ def box_scale(k):
     S_max = 0.9
     M = 5
 
-    S_k = S_min + (S_max - S_min) * (k - 1.0) / (M - 1.0) # equation 2
-
+    S_k = S_min + (S_max - S_min) * (k - 1.0) / (M - 1.0) 
     return S_k
     
     
 
-def Default_boxes(layer_shape , L):   # for L_th feature map 
+def Default_boxes(layer_shape , L):   # Default_boxes for L_th feature map 
 
-    layer_H =layer_shape[1]
+    layer_H = layer_shape[1]
     layer_W = layer_shape[0] 
 
     s_k = box_scale(L + 1)
