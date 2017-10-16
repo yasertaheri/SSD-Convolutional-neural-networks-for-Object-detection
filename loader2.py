@@ -13,7 +13,6 @@ from Boxes import Default_boxes
 ######################################################################################################################################
 ######################################################### Setting ####################################################################             
 output_size = [[38,38],[19,19],[10,10],[5,5],[3,3]]             
-# Offset is relative to upper-left-corner and lower-right-corner of the feature map cell
 prior_scaling=[0.1, 0.1, 0.2, 0.2]
 
 N_Default_Boxes = 5
@@ -21,13 +20,6 @@ N_Default_Boxes = 5
 N_Classes = 2         # 2 signs + 1 background class
 
 N_Channels = 3        # grayscale->1
-
-N_Class_Predict = N_Default_Boxes * N_Classes  # number of class predictions per feature map cell
-
-N_Loc_Predict  = N_Default_Boxes * 4  # number of localization regression predictions per feature map cell
-
-M=3
-
 
 dir = 'C:\VOCdevkit\VOC2012'
 
