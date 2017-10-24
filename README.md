@@ -8,7 +8,7 @@ The following results are obtained after training the deep neural network by onl
 
 ![My image](https://github.com/yasertaheri/SSD-Convolutional-neural-networks-for-Object-detection/blob/master/1.png)
 
-
+![My image](https://github.com/yasertaheri/SSD-Convolutional-neural-networks-for-Object-detection/blob/master/2.png)
 
 
 In progress... for detecting objects from 20 different categories.
