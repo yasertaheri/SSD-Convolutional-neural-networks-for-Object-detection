@@ -6,7 +6,7 @@ I have used the Pascal VOC 2012 dataset for end-to-end training of the implement
 
 The following results are obtained after training the deep neural network by only images containing person in order to detect people in the images.
 
-
+![My image](https://github.com/yasertaheri/SSD-Convolutional-neural-networks-for-Object-detection/blob/master/1.png)
 
 
 
