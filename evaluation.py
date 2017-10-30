@@ -367,9 +367,6 @@ with tf.Session() as sess:
         
      sc,boxd= sess.run([r_scores,r_bboxes], feed_dict = {X:image}) 
 
-cv2.namedWindow("image")
-cv2.imshow("image",train_img[0])
-cv2.waitKey(100) 
 
 transp=np.transpose(np.nonzero(sc[1]))
 
@@ -383,6 +380,8 @@ for index in range(len(transp)):
     
     cv2.rectangle( train_img[0] , ( x1,y1),(x2, y2),(255,0,255),5,5)
 
+cv2.namedWindow("image")
+cv2.imshow("image",train_img[0])
 cv2.waitKey()                           
            
          
